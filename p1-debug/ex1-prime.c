@@ -1,4 +1,4 @@
-=# include<stdio.h>
+# include<stdio.h>
 int prime_bad(int n)
 {
     if (n<2)
