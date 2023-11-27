@@ -4,13 +4,13 @@
 int count_vowels(char* str) {
     int count = 0;
     int n = strlen(str);
-    char vowels[] = {"a", "e", "i", "o", "u"};
+    char vowels[] = {'a', 'e', 'i', 'o', 'u'};
     
     for (int i=0; i<n; i++) {
         for (int j=0; j<5; j++) {
-            if (str[i] = vowels[j]) { 
+            if (str[i] == vowels[j]) { 
                 count++;
-                continue; 
+                break; 
             }
         }
     }
@@ -25,4 +25,5 @@ int main() {
     
     int result = count_vowels(s);
     printf("Number of vowels: %d", result);
+    return 0;
 }
