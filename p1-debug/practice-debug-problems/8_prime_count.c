@@ -2,11 +2,11 @@
 
 int isPrime(int n){
 	int i = 2;
-	for (; i < sqrt(n); i++) { 
+	for (; i <= sqrt(n); i++) { 
         if (n % i == 0)  
-            return 1;  
+            return 0;  
     } 
-    return 0;
+    return 1;
 }
 
 int countPrime(int l, int h){
