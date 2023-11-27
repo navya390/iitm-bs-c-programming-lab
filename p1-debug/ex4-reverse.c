@@ -4,8 +4,11 @@
 
 void sreverse(char* s){
     int n = strlen(s);
-    for(int i=0;i<n;i++){ // range should be n/2
-        s[i] = s[n-1]; // should use a temp swap swap(s[i], s[i-n-1])
+    for(int i=0;i<n/2;i++){
+        char temp=s[i];
+        // range should be n/2
+        s[i] = s[n-1-i];
+        s[n-1-i]=temp;// should use a temp swap swap(s[i], s[n-1-i])
     }
 }
 
