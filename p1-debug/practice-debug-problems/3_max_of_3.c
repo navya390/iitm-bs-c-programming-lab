@@ -2,7 +2,7 @@
 
 int max_of_3(int x, int y, int z)
 {
-    int maximum = 0;
+    int maximum = x;
     if(x >= y)
     {
         if (x >= z)
