@@ -46,6 +46,6 @@ int main()
 {
     int a,b,c,d,e;
     scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);
-    second_largest(a,b,c,d,e);
+    second_largest_bad(a,b,c,d,e);
     return 0;
 }
