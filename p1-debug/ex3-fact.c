@@ -1,16 +1,15 @@
-#include<stdio.h>
-int n = 0;
-void fact(int n)
-{
-    int i = 1;
-    for(; i <= n; i++)
-        n *= i;
+#include <stdio.h>
+
+int N = 1;
+
+void fact(int n) {
+    for (int i = 1; i <= n; i++) {
+        N *= i;
+    }
 }
 
-int main()
-{
+int main() {
     fact(5);
-    printf("%d", n);
+    printf("%d", N);
     return 0;
 }
-
