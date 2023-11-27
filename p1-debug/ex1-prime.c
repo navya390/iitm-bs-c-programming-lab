@@ -1,4 +1,4 @@
-# include<stdio.h>
+=# include<stdio.h>
 int prime_bad(int n)
 {
     if (n<2)
@@ -7,7 +7,7 @@ int prime_bad(int n)
     }
     else
     {
-        for (int i=2; i*i < n; i++)
+        for (int i=2; i*i <= n; i++)
         {
             if (n%i == 0)
             {
