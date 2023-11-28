@@ -4,10 +4,10 @@
 
 typedef struct {
     // Following members needed in struct:
-    // - name: string
-    // - roll number: string
-    // - marks: integer
-    // - grade: char
+    char name[MAX_STRING];// - name: string
+    char rollno[MAX_STRING];// - roll number: string
+    int marks;// - marks: integer
+    char grade;// - grade: char
 
 } student_t;
 
@@ -16,21 +16,13 @@ void print_student(student_t s) {
     // Nitin C (abc123) got grade D with 50 marks
 
     // Fill in the correct info for the "_" values and the "..."
-    printf("%_ (%_) for grade %_ with %_ marks\n", ...);
-}
-
-void compute_grade(student_t* sptr) {
-    if (sptr->marks >= 90) sptr->grade = 'S';
-    else if 
-    else if
-    else ;
+    printf("%s (%s) for grade %c with %d marks\n", s.name, s.rollno, s.grade, s.marks);
 }
 
 int main() {
     student_t s = { .name = "Nitin C", 
                     .rollno = "abc123",
-                    .marks = 50};
-    
-    compute_grade(&s);
+                    .marks = 50,
+                    .grade = 'D'};
     print_student(s);
 }
